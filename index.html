@@ -5,9 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="generator" content="pandoc" />
 
-        <meta name="author" content="SLWilson" />
     
-        <meta name="date" content="2021-01-01" />
     
     <title>Commonly used code</title>
 
@@ -19,9 +17,8 @@
     <script src="README_files/navigation-1.1/tabsets.js"></script>
     <link href="README_files/magnific-popup-1.1.0/magnific-popup.css" rel="stylesheet" />
     <script src="README_files/magnific-popup-1.1.0/jquery.magnific-popup.min.js"></script>
-    <link href="README_files/readthedown-0.1/readthedown.css" rel="stylesheet" />
-    <link href="README_files/readthedown-0.1/readthedown_fonts_embed.css" rel="stylesheet" />
-    <script src="README_files/readthedown-0.1/readthedown.js"></script>
+    <link href="README_files/clean-0.1/clean.css" rel="stylesheet" />
+    <script src="README_files/clean-0.1/clean.js"></script>
     
     
     
@@ -108,38 +105,22 @@
 
 <body class="preload">
 
-            <!-- readthedown start -->   
-   <div id="content" data-toggle="wy-nav-shift">
-     <nav id="nav-top" role="navigation" aria-label="top navigation">
-       <a role="button" href="#" data-toggle="wy-nav-top"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
-     </nav>
-         
+      <!-- html_clean start -->
+   <div class="container-fluid main-container">
+     <div class="row">
+       <div class="col-md-10">
+               
    
         
       <h1 class="title">Commonly used code</h1>
       
-         <!-- readthedown authors -->
-   <div id="sidebar">
-    <h2><a href="#content">Commonly used code</a></h2>
-    <div id="toc">
-      <ul>
-      <li><a href="#compress_directory.sh">compress_directory.sh</a></li>
-      <li><a href="#ggplot2_theme_bw.r">ggplot2_theme_bw.R</a></li>
-      <li><a href="#correlation_spearman_plot.r">correlation_spearman_plot.R</a></li>
-      <li><a href="#heatscree_cohensd_plot.r">heatscree_cohensd_plot.R</a></li>
-      </ul>
-    </div>
-    <div id="postamble" data-toggle="wy-nav-shift" class="status">
-                  <p class="author"><span class="glyphicon glyphicon-user"></span> SLWilson</p>
-                        <p class="date"><span class="glyphicon glyphicon-calendar"></span> 2021</p>
-          </div>
-   </div>
-   
-   
+      
+      <!-- html_clean authors -->
+         
       
    
 <!-- Don't indent these lines or it will mess pre blocks indentation --> 
-<div id="main">
+<div id="content">
 <div id="compress_directory.sh" class="section level1">
 <h1>compress_directory.sh</h1>
 <p>This will compress a directory containing a large amount of files.</p>
@@ -172,13 +153,29 @@
 
    
    
+      </div>
+   <div class="col-md-2">
+          <div id="toc">
+       <button type="button" class="close">×</button>
+       <ul>
+       <li><a href="#compress_directory.sh">compress_directory.sh</a></li>
+       <li><a href="#ggplot2_theme_bw.r">ggplot2_theme_bw.R</a></li>
+       <li><a href="#correlation_spearman_plot.r">correlation_spearman_plot.R</a></li>
+       <li><a href="#heatscree_cohensd_plot.r">heatscree_cohensd_plot.R</a></li>
+       </ul>
+     </div>
+        </div>
+   </div>
+   </div>
             
       
 
   <script>
     $(document).ready(function () {
 
-			
+		// add bootstrap table styles to pandoc tables
+	$('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+		
  		
 		$('#content img').addClass("image-lb");
 	$('#content').magnificPopup({

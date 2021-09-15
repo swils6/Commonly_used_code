@@ -1,3 +1,17 @@
+---
+title: "Commonly used code"
+output:
+  rmdformats::html_clean:
+    self_contained: false
+    fig_width: 15
+    fig_height: 16
+    thumbnails: false
+    lightbox: true
+    gallery: false
+    cold_folding: true
+    highlight: kate
+---
+
 # compress_directory.sh
 This will compress a directory containing a large amount of files.
 
