@@ -13,10 +13,7 @@ This script can be accessed within R by source("correlation_spearman_plot.R").
 
 This function will generate a scatter plot and calculate the spearman correlation coefficient.
 
-Output plots will look like this:
-![Example of plot from correlation_spearman_plot.R. Plot is from "Sensitive and reproducible cell-free methylome quantification with synthetic spike-in controls" available on biorxiv](/Users/samanthawilson/h4h/commonly_used_code/Commonly_used_code/example_figures/2020_figure4_corr_ctlkproj_GCfix.png)
-
-*Example of plot from correlation_spearman_plot.R. Plot is from ["Sensitive and reproducible cell-free methylome quantification with synthetic spike-in controls](https://www.biorxiv.org/content/10.1101/2021.02.12.430289v1.abstract)" available on biorxiv*.
+Example of what the output plots look like can be found on this repository's [github pages](https://swils6.github.io/Commonly_used_code/)
 
 # heatscree_cohensd_plot.R
 This function perfromed principal component analysis and correlates each principal component to known variables within the data.
@@ -27,7 +24,4 @@ This function produces two plots:
 
 2. Heatmap correlating each principal component to known variables in the data. The colours on the heat map correspond the a Cohen's d coefficient, a stand effect size metric. The astricks denotes the statistical p-value.
 
-The output plot looks like this:
-![Example of plot from heatscree_cohensd_plot.R. Plot is from "Sensitive and reproducible cell-free methylome quantification with synthetic spike-in controls" available on biorxiv](/Users/samanthawilson/h4h/commonly_used_code/Commonly_used_code/example_figures/2020_figure5_heatscree_GCfix.png)
-
-*Example of plot from heatscree_cohensd_plot.R. Plot is from ["Sensitive and reproducible cell-free methylome quantification with synthetic spike-in controls](https://www.biorxiv.org/content/10.1101/2021.02.12.430289v1.abstract)" available on biorxiv*.
+Example of what the output plots look like can be found on this repository's [github pages](https://swils6.github.io/Commonly_used_code/)
