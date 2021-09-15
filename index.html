@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="pandoc" />
+
+        <meta name="author" content="SLWilson" />
+    
+        <meta name="date" content="2021-01-01" />
+    
+    <title>Commonly used code</title>
+
+        <script src="README_files/jquery-1.11.3/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="README_files/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="README_files/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script src="README_files/jqueryui-1.11.4/jquery-ui.min.js"></script>
+    <script src="README_files/navigation-1.1/tabsets.js"></script>
+    <link href="README_files/magnific-popup-1.1.0/magnific-popup.css" rel="stylesheet" />
+    <script src="README_files/magnific-popup-1.1.0/jquery.magnific-popup.min.js"></script>
+    <link href="README_files/readthedown-0.1/readthedown.css" rel="stylesheet" />
+    <link href="README_files/readthedown-0.1/readthedown_fonts_embed.css" rel="stylesheet" />
+    <script src="README_files/readthedown-0.1/readthedown.js"></script>
+    
+    
+    
+    
+    <!-- tabsets -->
+    <script>
+      $(document).ready(function () {
+	  window.buildTabsets("toc");
+      });
+      $(document).ready(function () {
+	  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+	      $(this).parent().toggleClass('nav-tabs-open')
+	  });
+      });
+    </script>
+
+    <!-- code folding -->
+    
+    <!-- code download -->
+    
+    <!-- tabsets dropdown -->
+
+    <style type="text/css">
+      .tabset-dropdown > .nav-tabs {
+	  display: inline-table;
+	  max-height: 500px;
+	  min-height: 44px;
+	  overflow-y: auto;
+	  background: white;
+	  border: 1px solid #ddd;
+	  border-radius: 4px;
+      }
+      
+      .tabset-dropdown > .nav-tabs > li.active:before {
+	  content: "";
+	  font-family: 'Glyphicons Halflings';
+	  display: inline-block;
+	  padding: 10px;
+	  border-right: 1px solid #ddd;
+      }
+      
+      .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+	  content: "&#xe258;";
+	  border: none;
+      }
+      
+      .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+	  content: "";
+	  font-family: 'Glyphicons Halflings';
+	  display: inline-block;
+	  padding: 10px;
+	  border-right: 1px solid #ddd;
+      }
+      
+      .tabset-dropdown > .nav-tabs > li.active {
+	  display: block;
+      }
+
+      .tabset-dropdown > .nav-tabs > li.active a {
+  	  padding: 0 15px !important;
+      }
+
+      .tabset-dropdown > .nav-tabs > li > a,
+      .tabset-dropdown > .nav-tabs > li > a:focus,
+      .tabset-dropdown > .nav-tabs > li > a:hover {
+	  border: none;
+	  display: inline-block;
+	  border-radius: 4px;
+	  background-color: transparent;
+      }
+      
+      .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+	  display: block;
+	  float: none;
+      }
+      
+      .tabset-dropdown > .nav-tabs > li {
+	  display: none;
+	  margin-left: 0 !important;
+      }
+    </style>
+    
+</head>
+
+<body class="preload">
+
+            <!-- readthedown start -->   
+   <div id="content" data-toggle="wy-nav-shift">
+     <nav id="nav-top" role="navigation" aria-label="top navigation">
+       <a role="button" href="#" data-toggle="wy-nav-top"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
+     </nav>
+         
+   
+        
+      <h1 class="title">Commonly used code</h1>
+      
+         <!-- readthedown authors -->
+   <div id="sidebar">
+    <h2><a href="#content">Commonly used code</a></h2>
+    <div id="toc">
+      <ul>
+      <li><a href="#compress_directory.sh">compress_directory.sh</a></li>
+      <li><a href="#ggplot2_theme_bw.r">ggplot2_theme_bw.R</a></li>
+      <li><a href="#correlation_spearman_plot.r">correlation_spearman_plot.R</a></li>
+      <li><a href="#heatscree_cohensd_plot.r">heatscree_cohensd_plot.R</a></li>
+      </ul>
+    </div>
+    <div id="postamble" data-toggle="wy-nav-shift" class="status">
+                  <p class="author"><span class="glyphicon glyphicon-user"></span> SLWilson</p>
+                        <p class="date"><span class="glyphicon glyphicon-calendar"></span> 2021</p>
+          </div>
+   </div>
+   
+   
+      
+   
+<!-- Don't indent these lines or it will mess pre blocks indentation --> 
+<div id="main">
+<div id="compress_directory.sh" class="section level1">
+<h1>compress_directory.sh</h1>
+<p>This will compress a directory containing a large amount of files.</p>
+<p><strong>submit_compress_direct.sh</strong> is used to submit the script to a HPC cluster</p>
+</div>
+<div id="ggplot2_theme_bw.r" class="section level1">
+<h1>ggplot2_theme_bw.R</h1>
+<p>This script contains my prefered setting for ggplot2 plots.</p>
+<p>These parameters can be loaded into R by source(“ggplot2_theme_bw.R”).</p>
+</div>
+<div id="correlation_spearman_plot.r" class="section level1">
+<h1>correlation_spearman_plot.R</h1>
+<p>This script can be accessed within R by source(“correlation_spearman_plot.R”).</p>
+<p>This function will generate a scatter plot and calculate the spearman correlation coefficient.</p>
+<p>Output plots will look like this: <img src="example_figures/2020_figure4_corr_ctlkproj_GCfix.png" alt="Example of plot from correlation_spearman_plot.R. Plot is from “Sensitive and reproducible cell-free methylome quantification with synthetic spike-in controls” available on biorxiv" /></p>
+<p><em>Example of plot from correlation_spearman_plot.R. Plot is from <a href="https://www.biorxiv.org/content/10.1101/2021.02.12.430289v1.abstract">&quot;Sensitive and reproducible cell-free methylome quantification with synthetic spike-in controls</a>&quot; available on biorxiv</em>.</p>
+</div>
+<div id="heatscree_cohensd_plot.r" class="section level1">
+<h1>heatscree_cohensd_plot.R</h1>
+<p>This function perfromed principal component analysis and correlates each principal component to known variables within the data.</p>
+<p>This function produces two plots:</p>
+<ol style="list-style-type: decimal">
+<li><p>Scree plot showing the explained variance on the y-axis and each principal component on the x-axis.</p></li>
+<li><p>Heatmap correlating each principal component to known variables in the data. The colours on the heat map correspond the a Cohen’s d coefficient, a stand effect size metric. The astricks denotes the statistical p-value.</p></li>
+</ol>
+<p>The output plot looks like this: <img src="example_figures/2020_figure5_heatscree_GCfix.png" alt="Example of plot from heatscree_cohensd_plot.R. Plot is from “Sensitive and reproducible cell-free methylome quantification with synthetic spike-in controls” available on biorxiv" /></p>
+<p><em>Example of plot from heatscree_cohensd_plot.R. Plot is from <a href="https://www.biorxiv.org/content/10.1101/2021.02.12.430289v1.abstract">&quot;Sensitive and reproducible cell-free methylome quantification with synthetic spike-in controls</a>&quot; available on biorxiv</em>.</p>
+</div>
+</div>
+
+   
+   
+            
+      
+
+  <script>
+    $(document).ready(function () {
+
+			
+ 		
+		$('#content img').addClass("image-lb");
+	$('#content').magnificPopup({
+	    type:'image',
+	    closeOnContentClick: false,
+	    closeBtnInside: false,
+	    delegate: '.image-lb',
+	    gallery: {enabled: false },
+	    image: {
+	        verticalFit: true,
+		titleSrc: 'alt'
+	    }
+ 	});
+ 	    });
+  </script>
+
+
+
+    <!-- dynamically load mathjax for compatibility with self-contained -->
+  <script>
+    (function () {
+	var script = document.createElement("script");
+	script.type = "text/javascript";
+	script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+	document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+  </script>
+  
+</body>
+</html>
